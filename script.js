@@ -42,3 +42,27 @@ function snack1() {
 
 }
 
+// SNACK 2
+
+// funzione che parte quando clicco il bottone snack 2
+function snack2() {
+
+  // creo array squadre
+  const squadre = [
+    {
+      nome: "Milan",
+      punti: 0,
+      falli: 0
+    },
+    {
+      nome: "Inter",
+      punti: 0,
+      falli: 0
+    },
+    {
+      nome: "Napoli",
+      punti: 0,
+      falli: 0
+    }
+  ];
+

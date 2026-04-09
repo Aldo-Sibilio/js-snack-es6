@@ -21,3 +21,24 @@ function snack1() {
       peso: 8
     }
   ];
+
+   // imposto la prima bici come bici più leggera
+  let biciLeggera = bici[0];
+
+  // ciclo tutte le bici
+  for (let i = 0; i < bici.length; i++) {
+
+    // controllo se la bici corrente pesa meno della bici più leggera
+    if (bici[i].peso < biciLeggera.peso) {
+
+      // se pesa meno diventa la nuova bici più leggera
+      biciLeggera = bici[i];
+    }
+
+  }
+
+  // stampo il risultato in pagina
+  risultato.innerHTML = "La bici più leggera è " + biciLeggera.nome + " con peso " + biciLeggera.peso;
+
+}
+

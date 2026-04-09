@@ -66,3 +66,14 @@ function snack2() {
     }
   ];
 
+  // ciclo le squadre
+  for (let i = 0; i < squadre.length; i++) {
+
+    // genero numeri casuali per i punti
+    squadre[i].punti = Math.floor(Math.random() * 100) + 1;
+
+    // genero numeri casuali per i falli
+    squadre[i].falli = Math.floor(Math.random() * 50) + 1;
+
+  }
+

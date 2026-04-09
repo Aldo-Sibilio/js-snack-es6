@@ -77,3 +77,29 @@ function snack2() {
 
   }
 
+ // creo nuovo array vuoto
+  const nuoveSquadre = [];
+
+  // ciclo le squadre
+  for (let i = 0; i < squadre.length; i++) {
+
+    // creo nuovo oggetto con solo nome e falli
+    const nuovaSquadra = {
+      nome: squadre[i].nome,
+      falli: squadre[i].falli
+    };
+
+    // inserisco il nuovo oggetto nel nuovo array
+    nuoveSquadre.push(nuovaSquadra);
+
+  }
+
+  // stampo in console array completo
+  console.log("Squadre complete:", squadre);
+
+  // stampo in console nuovo array
+  console.log("Nuovo array:", nuoveSquadre);
+
+  // messaggio in pagina
+  risultato.innerHTML = "Controlla la console per vedere il risultato";
+}
